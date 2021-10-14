@@ -1,0 +1,5 @@
+allSpells: SELECT * FROM `a-taverna.5edicao.spells` ORDER BY id
+
+spellsByIds: SELECT * FROM `a-taverna.5edicao.spells` WHERE id IN UNNEST(@ids) ORDER BY id
+
+classSpells: SELECT * FROM `a-taverna.5edicao.class_spells` ORDER BY class
